@@ -1,0 +1,38 @@
+.idea/
+*.iml
+*.ipr
+*.iws
+out/
+*.class
+*.log
+*.jar
+!**/gradle/wrapper/gradle-wrapper.jar
+
+.gradle/
+**/.gradle/
+build/
+**/build/
+runs/
+**/runs/
+run/
+**/run/
+run-data/
+**/run-data/
+.gradletasknamecache
+
+# CurseForge upload cache
+curseforge/release-*/game-versions.json
+curseforge/release-*/upload-response-*.txt
+
+# Migration & process docs (never push)
+迁移文档.md
+*迁移文档*.md
+docs/迁移/
+mctest/
+
+Thumbs.db
+.DS_Store
+
+1201-forge-Rematch Cage/
+1211-neoforge-Rematch Cage/
+2612-neoforge-Rematch Cage/
