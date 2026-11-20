@@ -30,9 +30,6 @@ import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.HitResult;
-import net.minecraft.world.phys.shapes.CollisionContext;
-import net.minecraft.world.phys.shapes.Shapes;
-import net.minecraft.world.phys.shapes.VoxelShape;
 import net.minecraftforge.event.ForgeEventFactory;
 import net.minecraftforge.registries.ForgeRegistries;
 import org.jetbrains.annotations.Nullable;
@@ -40,19 +37,9 @@ import org.slf4j.Logger;
 
 public class RematchCageBlock extends Block implements EntityBlock {
     private static final Logger LOGGER = LogUtils.getLogger();
-    private static final VoxelShape SHAPE = Shapes.or(
-        Block.box(0.0D, 0.0D, 0.0D, 16.0D, 3.0D, 16.0D),
-        Block.box(1.0D, 3.0D, 1.0D, 15.0D, 13.0D, 15.0D),
-        Block.box(0.0D, 13.0D, 0.0D, 16.0D, 16.0D, 16.0D)
-    );
 
     public RematchCageBlock(Properties properties) {
         super(properties);
-    }
-
-    @Override
-    public VoxelShape getShape(BlockState state, BlockGetter level, BlockPos pos, CollisionContext context) {
-        return SHAPE;
     }
 
     @Override

@@ -47,7 +47,7 @@ public class RematchCageRenderer implements BlockEntityRenderer<RematchCageBlock
         float baseScale = RematchCageConfig.CLIENT.baseEntityScale.get().floatValue();
         float maxDim = Math.max(bbWidth, bbHeight);
         float scale = maxDim > 1.0F ? (baseScale / maxDim) : baseScale;
-        scale = Math.min(scale, Math.min(0.50F / bbWidth, 0.48F / bbHeight));
+        scale = Math.min(scale, Math.min(0.65F / bbWidth, 0.65F / bbHeight));
 
         int boostedLight = LightTexture.pack(
             Math.max(LightTexture.block(packedLight), 12),
@@ -60,7 +60,7 @@ public class RematchCageRenderer implements BlockEntityRenderer<RematchCageBlock
         stackDepthBefore++;
         dispatcher.setRenderShadow(false);
         try {
-            poseStack.translate(0.5D, 0.30D + bobOffset, 0.5D);
+            poseStack.translate(0.5D, 0.22D + bobOffset, 0.5D);
             poseStack.mulPose(Axis.YP.rotationDegrees(yaw));
             poseStack.scale(scale, scale, scale);
             dispatcher.render(displayEntity, 0.0D, 0.0D, 0.0D, 0.0F, 0.0F, poseStack, bufferSource, boostedLight);

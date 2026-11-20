@@ -116,7 +116,7 @@ public final class RematchCageConfig {
             this.baseEntityScale = builder.comment(
                 "内部生物模型目标基准尺寸（大型 Boss 会根据碰撞箱自动等比缩小）",
                 "Base target display size inside the cage (large bosses automatically scale down to fit)"
-            ).defineInRange("base_entity_scale", 0.46, 0.1, 1.2);
+            ).defineInRange("base_entity_scale", 0.53, 0.1, 1.2);
 
             builder.pop();
         }

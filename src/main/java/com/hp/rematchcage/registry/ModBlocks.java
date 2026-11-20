@@ -18,10 +18,10 @@ public final class ModBlocks {
         "rematch_cage",
         () -> new RematchCageBlock(
             BlockBehaviour.Properties.of()
-                .mapColor(MapColor.DEEPSLATE)
+                .mapColor(MapColor.STONE)
                 .strength(5.0F, 3600000.0F)
                 .requiresCorrectToolForDrops()
-                .sound(SoundType.DEEPSLATE_TILES)
+                .sound(SoundType.METAL)
                 .lightLevel(state -> 7)
                 .noOcclusion()
                 .pushReaction(PushReaction.BLOCK)

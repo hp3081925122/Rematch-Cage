@@ -16,10 +16,20 @@ out
 # gradle
 build
 .gradle
+.gradletasknamecache
 
-# other
+# runs & test outputs
 eclipse
 run
+runs
+run-data
+mctest/
+mcmodsrepo/
+
+# migration & dev process docs (never push)
+迁移文档.md
+*迁移文档*.md
+docs/迁移/
 
 # Files from Forge MDK
 forge*changelog.txt
