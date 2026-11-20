@@ -1,0 +1,32 @@
+# eclipse
+bin
+*.launch
+.settings
+.metadata
+.classpath
+.project
+
+# idea
+out
+*.ipr
+*.iws
+*.iml
+.idea
+
+# gradle
+build
+.gradle
+.gradletasknamecache
+
+# runs & test outputs
+eclipse
+run
+runs
+run-data
+mctest/
+repo/
+
+# migration & dev process docs (never push)
+迁移文档.md
+*迁移文档*.md
+docs/迁移/

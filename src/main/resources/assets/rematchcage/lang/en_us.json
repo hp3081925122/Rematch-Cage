@@ -1,0 +1,11 @@
+{
+  "block.rematchcage.rematch_cage": "Rematch Cage",
+  "message.rematchcage.empty_cage": "This Rematch Cage holds no bound soul",
+  "message.rematchcage.bound_entity": "Bound Rematch Cage to: %s",
+  "message.rematchcage.missing_entity": "The bound entity does not exist in this world",
+  "message.rematchcage.need_item": "Right-click with [%s] to awaken %s",
+  "message.rematchcage.unmapped_entity": "%s has no activation item configured",
+  "tooltip.rematchcage.stored_entity": "Bound Soul: %s",
+  "tooltip.rematchcage.activation_item": "Awakening Tribute: %s",
+  "tooltip.rematchcage.creative_hint": "Right-click with a Spawn Egg in Creative Mode to bind an entity"
+}
