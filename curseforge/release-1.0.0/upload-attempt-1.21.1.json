@@ -1,0 +1,17 @@
+{
+  "startedUtc": "2026-11-21T02:47:17.751957+00:00",
+  "sha256": "5ebf7027043cbb3b608b8601dcae684732be3e532f6e48da85fc2a7742d2c20a",
+  "metadata": {
+    "changelog": "## Initial Release (1.0.0)\n\n- Added the **Rematch Cage** block using the vanilla spawner appearance with an automatically scaled, spinning miniature model of the bound creature inside.\n- Added configurable one-to-many item/tag to entity/tag mappings (item_entity_mappings in \nematchcage-common.toml), with built-in examples for Wither, Elder Guardian, and Warden.\n- Automatically spawns a Rematch Cage upon mapped entity death with lowest-priority death handling, mid-air ground snapping, and protection against overwriting existing block entities.\n- Right-click with the configured item to consume 1 item (none in Creative), clear the cage, and summon the entity with full \finalizeSpawn initialization and persistence; defeating it again spawns a new cage.\n- Explosion, Wither, and Ender Dragon proof; cleanly removable with a pickaxe (drops nothing). Supports Creative Spawn Egg binding and middle-click cloning with bound entity tooltips.\n\n---\n\n## 首个正式版本（1.0.0）\n\n- 新增**重战牢笼**方块，采用原版刷怪笼镂空材质并在笼内悬浮旋转展示自适应缩放的目标生物微缩模型。\n- 支持在 \nematchcage-common.toml 中配置一对多「唤醒物品/标签 → 生物/生物标签」映射表（内置凋灵、远古守卫者与监守者示例）。\n- 映射生物死亡时自动生成重战牢笼，支持最低优先级防免死误判、半空死亡自动吸附至地面，以及避开已有方块实体容器。\n- 手持配置物品右键消耗 1 个祭品（创造模式不消耗），牢笼自动消失并完整执行 \finalizeSpawn 初始化与防刷没召唤对应生物；再次击杀后可重新生成牢笼。\n- 免疫爆炸、凋灵与末影龙破坏，可用镐子挖掘清理（不掉落本体）；支持创造模式刷怪蛋直接绑定生物及中键带数据复制与提示显示。",
+    "changelogType": "markdown",
+    "displayName": "1.21.1-NeoForge-Rematch Cage-1.0.0",
+    "gameVersions": [
+      11779,
+      10150,
+      11135,
+      9638,
+      9639
+    ],
+    "releaseType": "release"
+  }
+}
