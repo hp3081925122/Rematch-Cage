@@ -65,7 +65,9 @@ public final class RematchCageConfig {
                     "legendary_monsters:eye_of_sandstorm = legendary_monsters:dune_sentinel",
                     "legendary_monsters:eye_of_shulker = legendary_monsters:shulker_mimic",
                     "legendary_monsters:eye_of_soul = legendary_monsters:withered_abomination",
-                    "minecraft:ghast_tear = legendary_monsters:warped_fungussus"
+                    "minecraft:ghast_tear = legendary_monsters:warped_fungussus",
+                    "twilightforest:magic_map_focus = twilightforest:naga, twilightforest:lich, twilightforest:minoshroom, twilightforest:hydra, twilightforest:knight_phantom, twilightforest:ur_ghast, twilightforest:alpha_yeti, twilightforest:snow_queen",
+                    "aether:enchanted_gravitite = aether:slider, aether:valkyrie_queen, aether:sun_spirit"
                 ),
                 () -> "minecraft:heart_of_the_sea = minecraft:elder_guardian",
                 entry -> entry instanceof String s && s.contains("=")
