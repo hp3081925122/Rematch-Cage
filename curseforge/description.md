@@ -9,6 +9,8 @@
   - **Vanilla**: Elder Guardian (`minecraft:heart_of_the_sea`).
   - **Bosses'Rise**: Infernal Dragon, Yeti, Sandworm, Underworld Knight, and Kraken (`minecraft:nether_star`).
   - **Legendary Monsters**: All 13 structure bosses without a built-in respawn mechanic, activated by their corresponding locating Eyes (`eye_of_*`), plus Warped Fungussus (`minecraft:ghast_tear`).
+  - **The Twilight Forest**: Naga, Lich, Minoshroom, Hydra, Knight Phantom, Ur-Ghast, Alpha Yeti, and Snow Queen (`twilightforest:magic_map_focus`).
+  - **The Aether**: Slider, Valkyrie Queen, and Sun Spirit (`aether:enchanted_gravitite`).
 - **Automatic Cage Spawning on Death**:
   - Listens at lowest priority so canceled deaths (such as totems or mod revive mechanics) do not trigger false cages.
   - Supports mid-air ground snapping so flying bosses leave reachable cages on the ground below.
@@ -38,7 +40,9 @@
 - **开箱即用的内置兼容**：
   - **原版**：远古守卫者（使用 `minecraft:heart_of_the_sea` 海洋之心唤醒）。
   - **Bosses'Rise**：炼狱巨龙、雪人、沙虫、冥界骑士与海怪（共用 `minecraft:nether_star` 下界之星唤醒）。
-  - **Legendary Monsters**：全部 13 个无内置稳定重生机制的结构 Boss，12 个带定位之眼的结构 Boss 各自使用对应定位之眼（`eye_of_*`）唤醒，诡异菌怪使用 `minecraft:ghast_tear` 恶魂之泪唤醒。
+  - **Legendary Monsters**：全部 13 个无内置稳定重生机制的结构 Boss，12 个带定位之眼的结构 Boss 各自使用对应定位之眼（`eye_of_*`）唤醒，诡疑君使用 `minecraft:ghast_tear` 恶魂之泪唤醒。
+  - **暮色森林（The Twilight Forest）**：娜迦、巫妖、米诺菇、九头蛇、幻影骑士、暮初恶魂、雪怪首领与冰雪女王（共用 `twilightforest:magic_map_focus` 魔法地图核心唤醒）。
+  - **天境（The Aether）**：滑行魔石、武神女王与烈阳巨灵（共用 `aether:enchanted_gravitite` 神炼重力晶矿唤醒）。
 - **死亡自动生成与安全落点**：
   - 采用最低优先级监听死亡事件，避免被不死图腾或其他模组免死机制取消的死亡误生成牢笼。
   - 支持半空死亡自动向下吸附到最近地面，防止飞行 Boss 死在半空导致玩家无法右键交互。
