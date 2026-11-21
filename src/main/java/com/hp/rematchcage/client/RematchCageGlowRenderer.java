@@ -3,11 +3,13 @@ package com.hp.rematchcage.client;
 import com.hp.rematchcage.Rematchcage;
 import com.hp.rematchcage.block.RematchCageBlockEntity;
 import com.hp.rematchcage.config.RematchCageConfig;
+import com.mojang.blaze3d.systems.RenderSystem;
 import com.mojang.blaze3d.vertex.DefaultVertexFormat;
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.vertex.VertexConsumer;
 import com.mojang.blaze3d.vertex.VertexFormat;
 import java.util.OptionalDouble;
+import org.lwjgl.opengl.GL11;
 import net.minecraft.client.Camera;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.LevelRenderer;
@@ -29,7 +31,7 @@ public final class RematchCageGlowRenderer {
 
     @SubscribeEvent
     public static void onRenderLevelStage(RenderLevelStageEvent event) {
-        if (event.getStage() != RenderLevelStageEvent.Stage.AFTER_WEATHER) {
+        if (event.getStage() != RenderLevelStageEvent.Stage.AFTER_TRANSLUCENT_BLOCKS) {
             return;
         }
         if (!RematchCageConfig.CLIENT_SPEC.isLoaded() || !RematchCageConfig.CLIENT.xrayGlowOutline.get()) {
@@ -103,7 +105,12 @@ public final class RematchCageGlowRenderer {
 
         poseStack.popPose();
         if (renderedAny) {
+            boolean depthWasEnabled = GL11.glIsEnabled(GL11.GL_DEPTH_TEST);
+            RenderSystem.disableDepthTest();
             bufferSource.endBatch(XrayRenderType.XRAY_OUTLINE);
+            if (depthWasEnabled) {
+                RenderSystem.enableDepthTest();
+            }
         }
     }
 
@@ -120,7 +127,7 @@ public final class RematchCageGlowRenderer {
                 .setLineState(new LineStateShard(OptionalDouble.of(3.0D)))
                 .setLayeringState(VIEW_OFFSET_Z_LAYERING)
                 .setTransparencyState(TRANSLUCENT_TRANSPARENCY)
-                .setOutputState(ITEM_ENTITY_TARGET)
+                .setOutputState(MAIN_TARGET)
                 .setWriteMaskState(COLOR_WRITE)
                 .setCullState(NO_CULL)
                 .setDepthTestState(NO_DEPTH_TEST)
