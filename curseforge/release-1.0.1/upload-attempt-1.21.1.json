@@ -1,0 +1,17 @@
+{
+  "startedUtc": "2026-11-21T03:15:24.377342+00:00",
+  "sha256": "7b9cbb7132e3f1e91d2f8b971d5117aae3dc338e32f8fcf4eb64776fe22cad40",
+  "metadata": {
+    "changelog": "## What's Changed (1.0.1)\n\n- Refined default vanilla mappings: removed Wither and Warden from defaults and kept Elder Guardian (minecraft:heart_of_the_sea).\n- Added built-in default compatibility for **Bosses'Rise** (Infernal Dragon, Yeti, Sandworm, Underworld Knight, and Kraken via minecraft:nether_star).\n- Added built-in default compatibility for **Legendary Monsters** (all 13 structure bosses without a built-in respawn mechanic: 12 activated by their corresponding locating Eyes eye_of_*, plus Warped Fungussus via minecraft:ghast_tear).\n- Added built-in default compatibility for **The Twilight Forest** (Naga, Lich, Minoshroom, Hydra, Knight Phantom, Ur-Ghast, Alpha Yeti, and Snow Queen via \twilightforest:magic_map_focus).\n- Added built-in default compatibility for **The Aether** (Slider, Valkyrie Queen, and Sun Spirit via \u0007ether:enchanted_gravitite).\n\n---\n\n## 更新内容（1.0.1）\n\n- 调整默认原版映射：移除凋灵与监守者，仅保留远古守卫者（使用 minecraft:heart_of_the_sea 海洋之心激活）。\n- 新增 **Bosses'Rise** 默认兼容：炼狱飞龙、霜冻雪怪、巨型沙虫、冥界骑士与海怪（共用 minecraft:nether_star 下界之星激活）。\n- 新增 **Legendary Monsters** 默认兼容：覆盖全部 13 个无内置重生机制的结构 Boss，12 个带定位之眼的结构 Boss 各自使用对应定位之眼（eye_of_*）激活，诡疑君使用 minecraft:ghast_tear 恶魂之泪激活。\n- 新增 **暮色森林（The Twilight Forest）** 默认兼容：娜迦、巫妖、米诺菇、九头蛇、幻影骑士、暮初恶魂、雪怪首领与冰雪女王（共用 \twilightforest:magic_map_focus 魔法地图核心激活）。\n- 新增 **天境（The Aether）** 默认兼容：滑行魔石、武神女王与烈阳巨灵（共用 \u0007ether:enchanted_gravitite 神炼重力晶矿激活）。",
+    "changelogType": "markdown",
+    "displayName": "1.21.1-NeoForge-Rematch Cage-1.0.1",
+    "gameVersions": [
+      11779,
+      10150,
+      11135,
+      9638,
+      9639
+    ],
+    "releaseType": "release"
+  }
+}
