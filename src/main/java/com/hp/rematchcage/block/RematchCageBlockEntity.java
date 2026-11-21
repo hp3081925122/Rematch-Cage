@@ -2,6 +2,9 @@ package com.hp.rematchcage.block;
 
 import com.hp.rematchcage.registry.ModBlockEntities;
 import com.mojang.logging.LogUtils;
+import java.util.Collections;
+import java.util.Set;
+import java.util.concurrent.ConcurrentHashMap;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.core.registries.BuiltInRegistries;
@@ -25,6 +28,31 @@ public class RematchCageBlockEntity extends BlockEntity {
     public static final String TAG_ENTITY_ID = "EntityId";
     public static final String TAG_CUSTOM_NAME = "CustomName";
     private static final Logger LOGGER = LogUtils.getLogger();
+    private static final Set<RematchCageBlockEntity> CLIENT_CAGES = ConcurrentHashMap.newKeySet();
+
+    public static Set<RematchCageBlockEntity> getClientCages() {
+        return Collections.unmodifiableSet(CLIENT_CAGES);
+    }
+
+    @Override
+    public void onLoad() {
+        super.onLoad();
+        if (this.level != null && this.level.isClientSide) {
+            CLIENT_CAGES.add(this);
+        }
+    }
+
+    @Override
+    public void onChunkUnloaded() {
+        super.onChunkUnloaded();
+        CLIENT_CAGES.remove(this);
+    }
+
+    @Override
+    public void setRemoved() {
+        super.setRemoved();
+        CLIENT_CAGES.remove(this);
+    }
 
     @Nullable
     private ResourceLocation entityId;
