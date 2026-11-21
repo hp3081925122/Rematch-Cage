@@ -106,6 +106,8 @@ public final class RematchCageConfig {
         public final ForgeConfigSpec.DoubleValue spinDegreesPerTick;
         public final ForgeConfigSpec.DoubleValue bobAmplitude;
         public final ForgeConfigSpec.DoubleValue baseEntityScale;
+        public final ForgeConfigSpec.BooleanValue xrayGlowOutline;
+        public final ForgeConfigSpec.DoubleValue xrayGlowRange;
 
         Client(ForgeConfigSpec.Builder builder) {
             builder.comment(
@@ -132,6 +134,16 @@ public final class RematchCageConfig {
                 "内部生物模型目标基准尺寸（大型 Boss 会根据碰撞箱自动等比缩小）",
                 "Base target display size inside the cage (large bosses automatically scale down to fit)"
             ).defineInRange("base_entity_scale", 0.53, 0.1, 1.2);
+
+            this.xrayGlowOutline = builder.comment(
+                "是否渲染可穿透方块看见的重战牢笼发光轮廓",
+                "Render a see-through glowing outline around Rematch Cages visible through blocks"
+            ).define("xray_glow_outline", true);
+
+            this.xrayGlowRange = builder.comment(
+                "穿透方块发光轮廓的最大可见距离（格）",
+                "Maximum visibility distance in blocks for the see-through glowing outline"
+            ).defineInRange("xray_glow_range", 64.0, 0.0, 256.0);
 
             builder.pop();
         }

@@ -7,5 +7,8 @@
   "message.rematchcage.unmapped_entity": "%s has no activation item configured",
   "tooltip.rematchcage.stored_entity": "Bound Soul: %s",
   "tooltip.rematchcage.activation_item": "Awakening Tribute: %s",
-  "tooltip.rematchcage.creative_hint": "Right-click with a Spawn Egg in Creative Mode to bind an entity"
+  "tooltip.rematchcage.creative_hint": "Right-click with a Spawn Egg in Creative Mode to bind an entity",
+  "tooltip.rematchcage.jade.empty": "Empty Cage",
+  "tooltip.rematchcage.jade.unmapped": "No Activation Tribute Configured",
+  "config.jade.plugin_rematchcage.rematch_cage": "Rematch Cage Info"
 }

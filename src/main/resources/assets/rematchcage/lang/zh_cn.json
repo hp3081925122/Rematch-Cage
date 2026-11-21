@@ -7,5 +7,8 @@
   "message.rematchcage.unmapped_entity": "%s 当前未在配置中绑定唤醒物品",
   "tooltip.rematchcage.stored_entity": "封存灵魂：%s",
   "tooltip.rematchcage.activation_item": "唤醒祭品：%s",
-  "tooltip.rematchcage.creative_hint": "创造模式下手持刷怪蛋右键可绑定生物"
+  "tooltip.rematchcage.creative_hint": "创造模式下手持刷怪蛋右键可绑定生物",
+  "tooltip.rematchcage.jade.empty": "空牢笼",
+  "tooltip.rematchcage.jade.unmapped": "未配置唤醒祭品",
+  "config.jade.plugin_rematchcage.rematch_cage": "重战牢笼信息"
 }
