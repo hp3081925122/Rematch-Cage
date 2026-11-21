@@ -51,10 +51,23 @@ public final class RematchCageConfig {
             ).defineListAllowEmpty(
                 List.of("item_entity_mappings"),
                 () -> List.of(
-                    "minecraft:nether_star = minecraft:wither, minecraft:elder_guardian",
-                    "minecraft:echo_shard = minecraft:warden"
+                    "minecraft:heart_of_the_sea = minecraft:elder_guardian",
+                    "minecraft:nether_star = block_factorys_bosses:infernal_dragon, block_factorys_bosses:yeti, block_factorys_bosses:sandworm, block_factorys_bosses:underworld_knight, block_factorys_bosses:kraken",
+                    "legendary_monsters:eye_of_air = legendary_monsters:cloud_golem",
+                    "legendary_monsters:eye_of_annihilation = legendary_monsters:the_obliterator",
+                    "legendary_monsters:eye_of_bones = legendary_monsters:skeletosaurus",
+                    "legendary_monsters:eye_of_chorus = legendary_monsters:endersent",
+                    "legendary_monsters:eye_of_frost = legendary_monsters:frostbitten_golem",
+                    "legendary_monsters:eye_of_ghost = legendary_monsters:posessed_paladin",
+                    "legendary_monsters:eye_of_magma = legendary_monsters:lava_eater",
+                    "legendary_monsters:eye_of_many_ribs = legendary_monsters:ancient_guardian",
+                    "legendary_monsters:eye_of_moss = legendary_monsters:overgrown_colossus",
+                    "legendary_monsters:eye_of_sandstorm = legendary_monsters:dune_sentinel",
+                    "legendary_monsters:eye_of_shulker = legendary_monsters:shulker_mimic",
+                    "legendary_monsters:eye_of_soul = legendary_monsters:withered_abomination",
+                    "minecraft:ghast_tear = legendary_monsters:warped_fungussus"
                 ),
-                () -> "minecraft:nether_star = minecraft:wither",
+                () -> "minecraft:heart_of_the_sea = minecraft:elder_guardian",
                 entry -> entry instanceof String s && s.contains("=")
             );
 
