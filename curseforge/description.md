@@ -4,7 +4,11 @@
 
 ## Features
 
-- **Flexible Item-to-Entities Mapping**: Map any item or `#item_tag` to a group of entities or `#entity_type_tag` in `rematchcage-common.toml` (for example, `minecraft:nether_star = minecraft:wither, minecraft:elder_guardian` and `minecraft:echo_shard = minecraft:warden`).
+- **Flexible Item-to-Entities Mapping**: Map any item or `#item_tag` to a group of entities or `#entity_type_tag` in `rematchcage-common.toml`.
+- **Built-in Default Compatibility**:
+  - **Vanilla**: Elder Guardian (`minecraft:heart_of_the_sea`).
+  - **Bosses'Rise**: Infernal Dragon, Yeti, Sandworm, Underworld Knight, and Kraken (`minecraft:nether_star`).
+  - **Legendary Monsters**: All 13 structure bosses without a built-in respawn mechanic, activated by their corresponding locating Eyes (`eye_of_*`), plus Warped Fungussus (`minecraft:ghast_tear`).
 - **Automatic Cage Spawning on Death**:
   - Listens at lowest priority so canceled deaths (such as totems or mod revive mechanics) do not trigger false cages.
   - Supports mid-air ground snapping so flying bosses leave reachable cages on the ground below.
@@ -30,7 +34,11 @@
 
 ## 核心功能
 
-- **灵活的一对多映射配置**：在 `rematchcage-common.toml` 中按 `物品ID或#物品标签 = 生物ID1, 生物ID2, #生物标签` 格式自由配置（内置示例：`minecraft:nether_star = minecraft:wither, minecraft:elder_guardian` 与 `minecraft:echo_shard = minecraft:warden`）。
+- **灵活的一对多映射配置**：在 `rematchcage-common.toml` 中按 `物品ID或#物品标签 = 生物ID1, 生物ID2, #生物标签` 格式自由配置。
+- **开箱即用的内置兼容**：
+  - **原版**：远古守卫者（使用 `minecraft:heart_of_the_sea` 海洋之心唤醒）。
+  - **Bosses'Rise**：炼狱巨龙、雪人、沙虫、冥界骑士与海怪（共用 `minecraft:nether_star` 下界之星唤醒）。
+  - **Legendary Monsters**：全部 13 个无内置稳定重生机制的结构 Boss，12 个带定位之眼的结构 Boss 各自使用对应定位之眼（`eye_of_*`）唤醒，诡异菌怪使用 `minecraft:ghast_tear` 恶魂之泪唤醒。
 - **死亡自动生成与安全落点**：
   - 采用最低优先级监听死亡事件，避免被不死图腾或其他模组免死机制取消的死亡误生成牢笼。
   - 支持半空死亡自动向下吸附到最近地面，防止飞行 Boss 死在半空导致玩家无法右键交互。
