@@ -1,0 +1,17 @@
+{
+  "startedUtc": "2026-11-21T04:52:23.502245+00:00",
+  "sha256": "ecf81b2bd37bc2946c7bfe4d0323c76325fa52071aea171012d7435a0ab0bd2d",
+  "metadata": {
+    "changelog": "## What's Changed (1.0.2)\n\n- Added optional **Jade** integration: looking at a Rematch Cage displays the bound entity and required activation item(s) with item icons (synced from server).\n- Added a through-block glowing X-ray outline for nearby Rematch Cages with a dual-layer pulsing cyan/gold highlight so cages are easy to spot behind terrain or walls.\n- Added client config options xray_glow_outline (default: \true) and xray_glow_range (default: 48.0) to toggle or adjust the glow outline range.\n\n---\n\n## 更新内容（1.0.2）\n\n- 新增 **Jade** 可选兼容：准星指向重战牢笼时，实时显示内部绑定的生物名称以及所需的激活物品与物品图标（服务端同步）。\n- 新增可穿透方块看见的发光轮廓效果：附近重战牢笼会渲染青金色双层呼吸脉动高亮线框，隔着墙体或地形也能清晰定位。\n- 新增客户端配置项 xray_glow_outline（默认开启）与 xray_glow_range（默认 48.0 格），可自由开关或调整发光透视距离。",
+    "changelogType": "markdown",
+    "displayName": "26.1.2-NeoForge-Rematch Cage-1.0.2",
+    "gameVersions": [
+      16082,
+      10150,
+      14454,
+      9638,
+      9639
+    ],
+    "releaseType": "release"
+  }
+}
